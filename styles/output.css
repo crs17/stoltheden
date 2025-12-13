@@ -601,8 +601,17 @@
   .rounded-lg {
     border-radius: var(--radius-lg);
   }
+  .bg-\[url\(\'\.\.\/images\/bg\.webp\'\)\] {
+    background-image: url('../images/bg.webp');
+  }
+  .bg-\[url\(\'\.\/images\/bg\.webp\'\)\] {
+    background-image: url('./images/bg.webp');
+  }
   .bg-\[url\(\'\/images\/bg\.webp\'\)\] {
     background-image: url('/images/bg.webp');
+  }
+  .bg-\[url\(\'images\/bg\.webp\'\)\] {
+    background-image: url('images/bg.webp');
   }
   .bg-cover {
     background-size: cover;
