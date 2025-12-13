@@ -1,39 +1,52 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
+    <script src="scripts/main.js"></script>
+    <link href="./styles/output.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giv Os Stoltheden Tilbage</title>
 </head>
 <body>
-<h1>Giv Os Stoltheden Tilbage</h1>
-<p>
+    <article class="prose lg:prose-2xl prose-stone">
+
+<div class="m-20">
+<div class="bg-[url('/images/bg.webp')] rounded-lg box-content bg-cover m-10 bg-center shrink-0 p-12">   
+<h1 class="text-4xl font-bold text-white text-center p-12">Giv Os Stoltheden Tilbage</h1>
+<p class="text-white text-xl font-bold text-center">
     Vi vil så gerne være stolte af det danske landbrug. 
     Vi har været stolte af det danske landbrug. 
     Nu er landbruget for mange mennesker noget perifært. Men ind i mellem dukker den op, skammen.
     Skammen over den elendige dyrevelfærd. Over fedtemøget og MRSA.
-
+</p>
+    <p class="text-white text-xl font-bold text-center">
     Men sådan behøves det ikke at være. 
 </p>
-<p>
+<p class="text-white text-center">
     #givosstolthedentilbage 
 </p>
-
+</div>
 <div id="dyrevelfærd">
     <a href="#dyrevelfærd"><h2>Dyrevelfærd</h2></a>
     <p>
         <h3>Skamfulde facts</h3>
         <ul>
-            <li>Knap 29.000 grise dør utidigt hver dag i Danmark. [<a href="https://www.dyrenesbeskyttelse.dk/artikler/groen-trepartsaftale-fastholder-brutalt-liv-grise">Dyrenes Beskyttelse</a>]</li>
-            <li>En gris på 100 kg skal have 0,65 m² at leve på. [<a href="https://www.retsinformation.dk/eli/lta/2025/105#P34">Dyrevelfærdsloven</a>]</li>
+            <li>
+                <span class="fact">Knap 29.000 grise dør utidigt hver dag i Danmark</span>
+                [<a href="https://www.dyrenesbeskyttelse.dk/artikler/groen-trepartsaftale-fastholder-brutalt-liv-grise">Dyrenes Beskyttelse</a>]
+                <button title="Kopier fakta til udklipsholderen" onclick="copyToClipboard(this)">&#128279;</button>
+            </li>
+            <li>
+                <span class="fact">En gris på 100 kg skal have 0,65 m² at leve på</span>
+                [<a href="https://www.retsinformation.dk/eli/lta/2025/105#P34">Dyrevelfærdsloven</a>]
+                <button title="Kopier fakta til udklipsholderen" onclick="copyToClipboard(this)">&#128279;</button>
+            </li>
         </ul>
     
-        <h3>Sådan vender stoltheden tilbage</h3>
-        Vi kan genvende stoltheder over landbruget, 
-        når dyrene kommer ud af staldene og får mulighed for at udleve
-        deres naturlige adfærd.
-        Det kræver at vi har langt færre dyr, men giver os kød af højere kvalitet.
-    
+        <h3>Bud på hvordan stoltheden kan genvindes</h3>
+        <ul>    
+            <li>Sæt dyrene ud af staldende og giv dem mulighed for at udleve deres naturlige adfærd</li>
+        </ul>    
     </p>    
 </div>
 
@@ -45,12 +58,88 @@
             <li>70 % af den danske kvælstofudledningen til havet kommer fra landbruget. [<a href="https://lf.dk/viden-om/miljoe-og-natur/kvaelstof-i-landbruget/">Landbrug og Fødevarer</a>]</li>
             <li>De bundlevende fisk i de indre farvande er gået markant tilbage. [<a href="https://www.aqua.dtu.dk/-/media/institutter/aqua/publikationer/rapporter-451-500/452-2024-udvikling-i-fiskebestande-baseret-paa-historiske-fiskeridata.pdf">DTU Aqua</a>]</li>
         </ul>
+        <h3>Bud på hvordan stoltheden kan genvindes</h3>
+        <ul>    
+            <li></li>
+        </ul>    
     </p>
 </div>
 
+<div id="MRSA">
+    <a href="#MRSA"><h2>MRSA</h2></a>
+    <p>
+        <h3>Skamfulde facts:</h3>
+        <ul>
+            <li></li>
+        </ul>
+        <h3>Bud på hvordan stoltheden kan genvindes</h3>
+        <ul>    
+            <li></li>
+        </ul>    
+    </p>
+</div>
 
+<div id="Drikkevand">
+    <a href="#Drikkevand"><h2>Drikkevand</h2></a>
+    <p>
+        <h3>Skamfulde facts:</h3>
+        <ul>
+            <li></li>
+        </ul>
+        <h3>Bud på hvordan stoltheden kan genvindes</h3>
+        <ul>    
+            <li></li>
+        </ul>    
+    </p>
+</div>
 
+<div id="Manglende_natur">
+    <a href="#Manglende_natur"><h2>Manglende natur</h2></a>
+    <p>
+        <h3>Skamfulde facts:</h3>
+        <ul>
+            <li>
+                <span class="fact">Højst 2,3 % af det danske landareal inklusive søer og vandløb, er naturarealer, hvor den samlede biodiversitet er beskyttet</span>
+                [<a href="https://www.biodiversitetsraadet.dk/aktuelt/biodiversitetsraadet-danmark-har-langt-fra-nok-beskyttet-natur-til-at-vende-tab-til-fremgang">Biodiversitetsrådet</a>]
+                <button title="Kopier fakta til udklipsholderen" onclick="copyToClipboard(this)">&#128279;</button>
+            </li>
+        </ul>
+        <h3>Bud på hvordan stoltheden kan genvindes</h3>
+        <ul>    
+            <li></li>
+        </ul>    
+    </p>
+</div>
 
+<div id="Esktrem_lobbyisme">
+    <a href="#Esktrem_lobbyisme"><h2>Esktrem lobbyisme</h2></a>
+    <p>
+        <h3>Skamfulde facts:</h3>
+        <ul>
+            <li></li>
+        </ul>
+        <h3>Bud på hvordan stoltheden kan genvindes</h3>
+        <ul>    
+            <li></li>
+        </ul>    
+    </p>
+</div>
 
+<div id="Krisebevidsthed">
+    <a href="#Krisebevidsthed"><h2>Krisebevidsthed</h2></a>
+    <p>
+        <h3>Skamfulde facts:</h3>
+        <ul>
+            <li></li>
+        </ul>
+        <h3>Bud på hvordan stoltheden kan genvindes</h3>
+        <ul>    
+            <li></li>
+        </ul>    
+    </p>
+</div>
+
+</div>
+</article>
 </body>
 </html>
